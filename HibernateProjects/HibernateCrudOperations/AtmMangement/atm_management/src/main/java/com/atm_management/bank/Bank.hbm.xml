@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Bank" table = "Account_Details">
+      
+      <meta attribute = "class-description">
+        
+      </meta>
+      
+      <id name = "user_id" type = "int" column = "User_ID">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "accountNumber" column = "AccountNumber" type = "int"/>
+      <property name = "accountHolderName" column = "AccountHolderName" type = "String"/>
+      <property name = "phoneNumber" column = "PhoneNumber" type = "int"/>
+    
+      
+   </class>
+</hibernate-mapping>
